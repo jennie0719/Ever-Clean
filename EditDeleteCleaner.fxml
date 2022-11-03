@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditDeleteCleanerController">
+   <children>
+      <TextField fx:id="search_data" layoutX="191.0" layoutY="40.0" />
+      <Button fx:id="search_but" defaultButton="true" layoutX="366.0" layoutY="40.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextField fx:id="id" layoutX="167.0" layoutY="295.0" prefHeight="27.0" prefWidth="49.0" />
+      <TextField fx:id="email" layoutX="327.0" layoutY="295.0" prefHeight="27.0" prefWidth="138.0" />
+      <TextField fx:id="name" layoutX="167.0" layoutY="327.0" prefHeight="27.0" prefWidth="92.0" />
+      <TextField fx:id="phone" layoutX="327.0" layoutY="327.0" prefHeight="27.0" prefWidth="106.0" />
+      <TextField fx:id="salary" layoutX="167.0" layoutY="359.0" prefHeight="27.0" prefWidth="92.0" />
+      <Text layoutX="134.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" />
+      <Text layoutX="123.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+      <Text layoutX="123.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary:" />
+      <Text layoutX="276.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+      <Text layoutX="275.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone:" />
+      <Button fx:id="edit_but" layoutX="433.0" layoutY="359.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button fx:id="delete_but" layoutX="480.0" layoutY="359.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Button fx:id="back_but" layoutX="540.0" layoutY="359.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <TableView fx:id="cleaner_tableview" layoutX="123.0" layoutY="84.0" prefHeight="200.0" prefWidth="371.0">
+         <columns>
+            <TableColumn fx:id="id_col" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="name_col" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="phone_col" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="email_col" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="salary_col" prefWidth="75.0" text="Salary" />
+         </columns>
+      </TableView>
+      <Text fx:id="message" layoutX="197.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="197.00000250339508" />
+   </children>
+</AnchorPane>

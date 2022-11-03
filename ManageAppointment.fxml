@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.241" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManageAppointmentController">
+   <children>
+      <Button fx:id="add_appointment_but" layoutX="257.0" layoutY="115.0" mnemonicParsing="false" onAction="#addAppointment" text="Add Appointment" />
+      <Button fx:id="edit_del_appointment_but" layoutX="232.0" layoutY="173.0" mnemonicParsing="false" onAction="#editDeleteAppointment" text="Edit or Delete Appointment" />
+      <Button fx:id="back_but" layoutX="471.0" layoutY="284.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+</AnchorPane>

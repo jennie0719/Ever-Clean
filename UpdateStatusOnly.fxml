@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UpdateStatusOnlyController">
+   <children>
+      <TextField fx:id="cus_name" disable="true" editable="false" layoutX="169.0" layoutY="99.0" prefHeight="27.0" prefWidth="147.0" AnchorPane.rightAnchor="284.0" />
+      <TextField fx:id="cus_phonenum" disable="true" editable="false" layoutX="169.0" layoutY="149.0" prefHeight="27.0" prefWidth="147.0" AnchorPane.rightAnchor="284.0" />
+      <TextField fx:id="cus_address" disable="true" editable="false" layoutX="57.0" layoutY="223.0" prefHeight="62.0" prefWidth="259.0" AnchorPane.rightAnchor="284.0" />
+      <Button fx:id="edit_but" defaultButton="true" layoutX="432.0" layoutY="333.0" mnemonicParsing="false" onAction="#Edit" text="Update" />
+      <Button fx:id="back_but" layoutX="505.0" layoutY="333.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+      <Label layoutX="57.0" layoutY="104.0" text="Customer Name" />
+      <Label layoutX="56.0" layoutY="153.0" text="Customer Phone" />
+      <Label layoutX="57.0" layoutY="194.0" text="Customer Address" />
+      <Text fx:id="reminder" layoutX="213.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="174.22900390625" />
+      <Label layoutX="345.0" layoutY="78.0" text="Date" AnchorPane.leftAnchor="345.0" />
+      <Label layoutX="344.0" layoutY="117.0" text="Time" AnchorPane.leftAnchor="345.0" />
+      <Label layoutX="344.0" layoutY="154.0" text="Duration" AnchorPane.leftAnchor="345.0" />
+      <Label layoutX="344.0" layoutY="194.0" text="Cleaner" AnchorPane.leftAnchor="345.0" />
+      <Label layoutX="344.0" layoutY="231.0" text="Amount" AnchorPane.leftAnchor="345.0" />
+      <TextField fx:id="apm_amount" disable="true" editable="false" layoutX="407.0" layoutY="227.0" prefHeight="25.0" prefWidth="110.0" AnchorPane.leftAnchor="409.0" />
+      <DatePicker fx:id="date_picker" disable="true" editable="false" layoutX="409.0" layoutY="73.0" prefHeight="27.0" prefWidth="110.0" AnchorPane.leftAnchor="409.0" />
+      <MenuButton fx:id="time_hour" disable="true" layoutX="409.0" layoutY="112.0" mnemonicParsing="false" text="HH" AnchorPane.leftAnchor="409.0">
+        <items>
+            <MenuItem mnemonicParsing="false" onAction="#apm_06hr" text="06" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_07hr" text="07" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_08hr" text="08" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_09hr" text="09" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_10hr" text="10" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_11hr" text="11" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_12hr" text="12" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_13hr" text="13" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_14hr" text="14" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_15hr" text="15" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_16hr" text="16" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_17hr" text="17" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_18hr" text="18" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_19hr" text="19" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_20hr" text="20" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_21hr" text="21" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_22hr" text="22" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="time_minute" disable="true" layoutX="476.0" layoutY="112.0" mnemonicParsing="false" text="MM">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#apm_00min" text="00" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_15min" text="15" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_30min" text="30" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_45min" text="45" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="duration" disable="true" layoutX="409.0" layoutY="149.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="110.0" AnchorPane.leftAnchor="409.0">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#apm_1dur" text="1" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_2dur" text="2" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_3dur" text="3" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_4dur" text="4" />
+            <MenuItem mnemonicParsing="false" onAction="#apm_5dur" text="5" />
+         </items>
+      </MenuButton>
+      <Label layoutX="349.0" layoutY="270.0" text="Status" AnchorPane.leftAnchor="345.0" />
+      <MenuButton fx:id="status" layoutX="414.0" layoutY="265.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="110.0" AnchorPane.leftAnchor="409.0">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#status_complete" text="Completed" />
+            <MenuItem mnemonicParsing="false" onAction="#status_incomplete" text="Incomplete" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="cleaner" disable="true" layoutX="409.0" layoutY="187.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="110.0" AnchorPane.leftAnchor="409.0">
+         <items>
+            <MenuItem mnemonicParsing="false" text="C1" />
+         </items></MenuButton>
+      <Text fx:id="status_reminder" layoutX="346.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>
